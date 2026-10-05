@@ -7,7 +7,7 @@
 <meta name="description" content="Casa Nogal: cocina de mercado, carta de temporada y vinos. Reservá tu mesa o pedí para llevar.">
 <meta property="og:title" content="Casa Nogal — Cocina de mercado">
 <meta property="og:description" content="Reservá tu mesa o pedí para llevar. Carta de temporada y vinos argentinos.">
-<meta name="theme-color" content="#F3EBDC">
+<meta name="theme-color" content="#0E0B0A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -144,24 +144,31 @@ form.card{padding:34px}
 .hero .btn:first-child{background:var(--btn);color:var(--btnt);border-color:var(--btn)}
 .hero .btn:first-child:hover{filter:brightness(1.2)}
 .strip{background:var(--btn);color:var(--btnt);border:0;padding:20px 0}
+/* bloques de color fijos: negro, bordó y crema */
+.dk{--bg:#0E0B0A;--surface:#17120F;--ink:#F1E8D6;--muted:#A89B88;--brass:#CF6177;--line:#2D2420;--btn:#7D1A2B;--btnt:#F3EBDC;background:var(--bg);color:var(--ink)}
+header.dk{background:color-mix(in srgb,#0E0B0A 92%,transparent)}
+.bd{--bg:#5A0F1D;--surface:#6B1424;--ink:#F3EBDC;--muted:#DDC3B8;--brass:#F0C9A8;--line:#8A3342;--btn:#F3EBDC;--btnt:#5A0F1D;background:var(--bg);color:var(--ink)}
+.bd form.card{background:var(--surface)}
+.bd input,.bd select{background:var(--bg);color:var(--ink)}
+.bd .btn{color:var(--btnt);background:var(--btn);border-color:var(--btn)}
 @media (max-width:820px){.hero{min-height:auto}.logo{font-size:18px;letter-spacing:.24em}.logo i{font-size:22px}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav">
+<header class="dk"><div class="wrap nav">
   <a class="logo" href="#top">Casa <i>Nogal</i></a>
   <div style="display:flex;align-items:center"><nav><a href="#carta">Carta</a><a href="#reservas">Reservas</a><a href="#info">Horarios</a></nav>
   <button class="btn sm" id="openCart">Para llevar (<span id="count">0</span>)</button></div>
 </div></header>
 
 <main id="top">
-  <div class="wrap hero">
+  <div class="dk"><div class="wrap hero">
     <div class="orn"></div>
     <div class="badge"><span class="dot" id="dot"></span><span id="open">Revisando horario…</span></div>
     <h1>Cocina de <em>mercado</em>, mesa larga</h1>
     <p>Platos de temporada, brasas, pastas caseras y una carta de vinos argentinos. Reservá tu mesa o pedí para llevar.</p>
     <div><a class="btn" href="#reservas">Reservar mesa</a><a class="btn alt" href="#carta">Ver la carta</a></div>
-  </div>
+  </div></div>
   <div class="strip"><div class="wrap"><span>Menú ejecutivo de martes a viernes</span><span>Opciones vegetarianas y sin TACC</span><span>Eventos y grupos</span></div></div>
 
   <section id="carta"><div class="wrap">
@@ -172,7 +179,7 @@ form.card{padding:34px}
     <p class="note" style="margin-top:18px">Sumá platos con + para armar un pedido para llevar.</p>
   </div></section>
 
-  <section class="res" id="reservas"><div class="wrap rgrid">
+  <section class="res bd" id="reservas"><div class="wrap rgrid">
     <div>
       <h2>Reservá tu mesa</h2>
       <p>Elegí día, horario y cantidad de personas. Te confirmamos por WhatsApp a la brevedad.</p>
@@ -196,7 +203,7 @@ form.card{padding:34px}
   </div></section>
 </main>
 
-<footer><div class="wrap"><span>© 2026 Casa Nogal · Sitio de demostración</span><span>WhatsApp +54 9 11 0000-0000</span></div></footer>
+<footer class="dk"><div class="wrap"><span>© 2026 Casa Nogal · Sitio de demostración</span><span>WhatsApp +54 9 11 0000-0000</span></div></footer>
 
 <div class="veil" id="veil"></div>
 <aside class="drawer" id="drawer" aria-label="Pedido para llevar" aria-hidden="true">
