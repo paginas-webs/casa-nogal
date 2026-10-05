@@ -7,16 +7,16 @@
 <meta name="description" content="Casa Nogal: cocina de mercado, carta de temporada y vinos. Reservá tu mesa o pedí para llevar.">
 <meta property="og:title" content="Casa Nogal — Cocina de mercado">
 <meta property="og:description" content="Reservá tu mesa o pedí para llevar. Carta de temporada y vinos argentinos.">
-<meta name="theme-color" content="#F6F1E7">
+<meta name="theme-color" content="#F3EBDC">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F6F1E7;--surface:#FBF8F1;--ink:#1C1A17;--muted:#6B6358;--brass:#8F7236;--line:#DED4C0;--btn:#8F7236;--btnt:#FFF;
+:root{--bg:#F3EBDC;--surface:#FAF4E8;--ink:#17120F;--muted:#64574D;--brass:#6E1423;--line:#DCCFB8;--btn:#6E1423;--btnt:#F3EBDC;
 --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F0E0C;--surface:#171512;--ink:#EDE6D6;--muted:#A89F8E;--brass:#C8A96A;--line:#2B2722;--btn:#C8A96A;--btnt:#0F0E0C}}
-:root[data-theme="dark"]{--bg:#0F0E0C;--surface:#171512;--ink:#EDE6D6;--muted:#A89F8E;--brass:#C8A96A;--line:#2B2722;--btn:#C8A96A;--btnt:#0F0E0C}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E0B0A;--surface:#17120F;--ink:#F1E8D6;--muted:#A89B88;--brass:#CF6177;--line:#2D2420;--btn:#7D1A2B;--btnt:#F3EBDC}}
+:root[data-theme="dark"]{--bg:#0E0B0A;--surface:#17120F;--ink:#F1E8D6;--muted:#A89B88;--brass:#CF6177;--line:#2D2420;--btn:#7D1A2B;--btnt:#F3EBDC}
 html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans)}
@@ -140,6 +140,10 @@ form.card{padding:34px}
 .info table{width:auto;margin:0 auto}
 .opts label{border-radius:0}
 .tot{font-weight:400}
+.btn:hover{background:var(--btn);color:var(--btnt);border-color:var(--btn)}
+.hero .btn:first-child{background:var(--btn);color:var(--btnt);border-color:var(--btn)}
+.hero .btn:first-child:hover{filter:brightness(1.2)}
+.strip{background:var(--btn);color:var(--btnt);border:0;padding:20px 0}
 @media (max-width:820px){.hero{min-height:auto}.logo{font-size:18px;letter-spacing:.24em}.logo i{font-size:22px}}
 </style>
 </head>
